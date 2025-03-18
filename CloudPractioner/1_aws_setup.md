@@ -34,4 +34,23 @@ rm AWSCLIV2.pkg
 ```
 
 
-## Setup AWS CLI on macOS
+# Setup AWS CLI on macOS
+## Step 1: Create access_token for specific user 
+IAM > Users > <your_username_value> > Create access key
+
+After create `access_token`, store it secretly then start configure AWS. 
+
+## Step 2: Configure credentials on AWS CLI
+```bash 
+aws configure 
+
+> AWS Access Key ID: <aws_access_key>
+> AWS Secret Access Key ID: <aws_secret_key>
+> Default region name: <main_region_that_user_is_working>
+> Default output format: <just_enter_to_skip>
+```
+
+## Step 3: (Optional) List all users 
+```bash
+aws iam list-users
+```
