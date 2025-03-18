@@ -32,3 +32,6 @@ The output should display the version of AWS CLI installed, e.g., `aws-cli/2.x.x
 ```bash
 rm AWSCLIV2.pkg
 ```
+
+
+## Setup AWS CLI on macOS
